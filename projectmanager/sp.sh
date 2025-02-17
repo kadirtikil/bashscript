@@ -65,6 +65,7 @@ openProjectFromMap() {
     local key=$1
     echo "Opening project..."
     code "$base/${project_and_dir[$key]}"
+    cd "$base/${project_and_dir[$key]}"
     exit
 }
 
